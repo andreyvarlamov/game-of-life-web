@@ -1,21 +1,14 @@
 function setup() { 
-    createCanvas(400, 400);
-    g = new GOLCanvas();
-    frameRate(2);
+    size = 50;
+    cell_size = 10;
+    createCanvas(size*cell_size+1, size*cell_size+1);
+    t = new Table(size, cell_size);
+    
+    frameRate(5);
   } 
   
   function draw() {
-    if (g.index == 0) {
-        background('#FF00FF');
-        g.index++;
-    }
-    else {
-        background('#00FFFF');
-        g.index = 0;
-    }
+    t.generateCells();
+    t.redraw();
     
-  }
-
-  function GOLCanvas() {
-      this.index = 0;
   }

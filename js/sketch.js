@@ -1,6 +1,6 @@
 function setup() { 
-    size = 50;
-    cell_size = 10;
+    size = 20;
+    cell_size = 12;
     createCanvas(size*cell_size+1, size*cell_size+1);
     t = new Table(size, cell_size);
     t.generateCells();

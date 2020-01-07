@@ -1,5 +1,5 @@
 function setup() { 
-    size = 20;
+    size = 30;
     cell_size = 12;
     createCanvas(size*cell_size+1, size*cell_size+1);
     t = new Table(size, cell_size);

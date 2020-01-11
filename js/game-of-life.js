@@ -20,14 +20,11 @@ function Table(size, cell_size) {
     this.redraw = function() {
         for (i = 0; i < this.rows.length; i++) {
             for (j = 0; j < this.rows[0].length; j++) {
-                if (this.rows[i][j][0] == 1) {
-                    fill('blue');
-                }
-                else {
-                    fill('white');
-                }
-
-                rect(i*cell_size, j*cell_size, (i+1)*cell_size, (j+1)*cell_size);
+                if (this.rows[i][j][0] == 1) fill('blue');
+                else fill('white');
+                stroke(0);
+                strokeWeight(1);
+                rect(i*cell_size, j*cell_size, cell_size-1, cell_size-1);
             }
         }
     }

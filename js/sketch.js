@@ -9,6 +9,6 @@ function setup() {
   } 
   
   function draw() {
-    t.process();
+    if (state == 1) t.process();
     t.redraw();
   }

@@ -9,8 +9,6 @@ function setup() {
   } 
   
   function draw() {
-    
     t.process();
     t.redraw();
-    
   }

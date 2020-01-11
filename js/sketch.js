@@ -5,7 +5,7 @@ function setup() {
     canvas.parent('canvas-div');
     t = new Table(size, cell_size);
     t.generateCells();
-    frameRate(5);
+    frameRate(30);
   } 
   
   function draw() {
